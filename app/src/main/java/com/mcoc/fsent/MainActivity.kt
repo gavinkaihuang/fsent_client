@@ -1,5 +1,6 @@
 package com.mcoc.fsent
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -12,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.mcoc.fsent.databinding.ActivityMainBinding
+import com.mcoc.fsent.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -54,4 +56,20 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+    var logined = false
+    override fun onResume() {
+        super.onResume()
+        if (logined == false)
+            promitLogin()
+    }
+
+
+    fun promitLogin() {
+        logined = true
+
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
 }
