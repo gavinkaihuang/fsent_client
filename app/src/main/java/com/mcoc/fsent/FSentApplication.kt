@@ -8,6 +8,8 @@ import com.facebook.stetho.okhttp3.StethoInterceptor
 class FSentApplication : Application() {
     override fun onCreate() {
         super.onCreate()
+
+        init()
     }
 
     private fun init() {

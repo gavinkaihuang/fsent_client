@@ -60,8 +60,8 @@ class MainActivity : AppCompatActivity() {
     var logined = false
     override fun onResume() {
         super.onResume()
-        if (logined == false)
-            promitLogin()
+//        if (logined == false)
+//            promitLogin()
     }
 
 
