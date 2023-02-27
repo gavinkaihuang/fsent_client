@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/nav_list"
-        android:name="com.mcoc.fsent.ui.home.HomeFragment"
+        android:name="com.mcoc.fsent.fragments.BankListFragment"
         android:label="@string/menu_list"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_bank_list" />
 
     <fragment
         android:id="@+id/nav_banks"

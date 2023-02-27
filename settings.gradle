@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
         maven { name 'ali';
             url 'https://maven.aliyun.com/repository/public/'}
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "fsent"
