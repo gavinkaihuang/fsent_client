@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/nav_list"
-        android:name="com.mcoc.fsent.fragments.BankListFragment"
+        android:name="com.mcoc.fsent.fragments.ConsumerItemListFragment"
         android:label="@string/menu_list"
-        tools:layout="@layout/fragment_bank_list" />
+        tools:layout="@layout/fragment_consumer_list" />
 
     <fragment
         android:id="@+id/nav_banks"
-        android:name="com.mcoc.fsent.ui.gallery.GalleryFragment"
+        android:name="com.mcoc.fsent.fragments.BankListFragment"
         android:label="@string/menu_banks"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_bank_list" />
 
     <fragment
         android:id="@+id/nav_chart"

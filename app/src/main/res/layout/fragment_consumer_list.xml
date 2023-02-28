@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:showIn="@layout/app_bar_main">
+
+<com.prolificinteractive.materialcalendarview.MaterialCalendarView
+    android:id="@+id/calendarView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mcv_showOtherDates="all"
+    app:mcv_selectionColor="#00F"
+    android:visibility="gone"
+    />
+
+<LinearLayout
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/exThreeSelectedDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="12dp"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:text="7 Jan, 2019"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/arrowIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/arraw_down" />
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/list"
+    android:name="com.mcoc.fsent.fragments.ConsumerItemListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".fragments.ConsumerItemListFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:listitem="@layout/fragment_consumer_item"
+    />
+
+
+</LinearLayout>
