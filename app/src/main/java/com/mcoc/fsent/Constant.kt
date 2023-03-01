@@ -8,6 +8,8 @@ class Constant {
 
         const val SIGN_IN = URL + "/login"
 
+        const val BANK_LIST = URL + "/bank/list"
+
 //        const val SIGN_IN = URL + "/sign"
     }
 
