@@ -4,13 +4,20 @@ class Constant {
 
     companion object {
         const val URL = "https://zlino.com"
-//        const val URL = "192.168.2.235:8001"
 
         const val SIGN_IN = URL + "/login"
-
         const val BANK_LIST = URL + "/bank/list"
 
-//        const val SIGN_IN = URL + "/sign"
+        const val DEBUG = true
+        const val PRINT_HEADER = ">>>>>>>>"
+
+        const val CODE = "status"
+        const val SUCCESS_CODE = "200"
+        const val DATA = "data"
+        const val MSG = "msg"
+
+
+
     }
 
 
