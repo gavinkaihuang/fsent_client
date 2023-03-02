@@ -54,14 +54,14 @@ class BankItemRecyclerViewAdapter() : RecyclerView.Adapter<BankItemRecyclerViewA
         when (code) {
             "zsyh" -> return R.drawable.logo_zhaoshang
             "yayh" -> return R.drawable.logo_pingan
-            "jsyh" -> return R.drawable.logo_jd
+            "jsyh" -> return R.drawable.logo_jsyh
             "xyyh" -> return R.drawable.logo_xingye
             "zgyh" -> return R.drawable.logo_boc
             "msyh" -> return R.drawable.logo_mingshen
             "alipay" -> return R.drawable.logo_alipay
             "jdbt" -> return R.drawable.logo_jd
         }
-        return  R.drawable.logo_jd
+        return  R.drawable.logo_defaultbk
     }
 
 }

@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.mcoc.fsent.activities.BankAddEditActivity
 import com.mcoc.fsent.databinding.ActivityMainBinding
 import com.mcoc.fsent.ui.login.LoginActivity
 
@@ -31,7 +32,12 @@ class MainActivity : AppCompatActivity() {
         binding.appBarMain.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
+            val intent = Intent(baseContext, BankAddEditActivity::class.java)
+//            intent.putExtra("id" "id")
+            startActivity(intent)
         }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.BankAddEditFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bankIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_defaultbk" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/activity_prompt_bank_code" />
+
+                <EditText
+                    android:id="@+id/bankCodeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lines="1"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/activity_prompt_bank_name" />
+
+                <EditText
+                    android:id="@+id/bankNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lines="1"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/activity_prompt_bank_note" />
+
+        <EditText
+            android:id="@+id/noteET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="5"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_add"/>
+
+
+    <!--    <string name="activity_prompt_bank_code">收支方式代码</string>-->
+    <!--    <string name="activity_prompt_bank_name">收支方式名称</string>-->
+    <!--    <string name="activity_prompt_bank_logo">收支方式图标</string>-->
+    <!--    <string name="activity_prompt_bank_note">备注</string>-->
+
+</LinearLayout>

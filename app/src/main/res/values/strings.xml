@@ -7,9 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-<!--    <string name="menu_home">Home</string>-->
-<!--    <string name="menu_gallery">Gallery</string>-->
-<!--    <string name="menu_slideshow">Slideshow</string>-->
+    <!--    <string name="menu_home">Home</string>-->
+    <!--    <string name="menu_gallery">Gallery</string>-->
+    <!--    <string name="menu_slideshow">Slideshow</string>-->
     <string name="menu_list">消费/支出</string>
     <string name="menu_banks">支出路径</string>
     <string name="menu_chart">报表</string>
@@ -23,4 +23,29 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="activity_title_bank_add">添加收支方式</string>
+    <string name="activity_title_bank_edit">修改收支方式</string>
+    <string name="activity_prompt_bank_code">收支方式代码</string>
+    <string name="activity_prompt_bank_name">收支方式名称</string>
+    <string name="activity_prompt_bank_logo">收支方式图标</string>
+    <string name="activity_prompt_bank_note">备注</string>
+
+
+
+    <string name="button_add">添加</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
